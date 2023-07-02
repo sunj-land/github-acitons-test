@@ -1,4 +1,4 @@
 active: true
 key:
   - key: value
-    key2: [1, 2]
+    key2: [1, 2, 3]
