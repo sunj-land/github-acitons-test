@@ -1,7 +1,11 @@
 name: Shell Commands
 
-on: [push]
-
+on:
+  schedule:
+    - cron: '1 * * * *'
+  push:
+    branches:
+      - 'main'
 jobs:
   run-shell-command:
     runs-on: ubuntu-latest
