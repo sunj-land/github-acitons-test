@@ -2,7 +2,7 @@ name: Shell Commands
 
 on:
   schedule:
-    - cron: '* * * * *'
+    - cron: '0/3 * * * *'
   push:
     branches:
       - 'master'
