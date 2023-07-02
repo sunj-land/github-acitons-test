@@ -13,3 +13,13 @@ jobs:
           who-to-greet: Sunj
       - name: Log Greeting Time
         run: echo "${{ steps.greet.outputs.time }}"
+      - name: List Files
+        run: |
+          pwd
+          ls -a
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
+          echo "${{github.token}}"
+          git clone git@github:$GITHUB_REPOSITORY
+          git checkout $GITHUB_SHA
